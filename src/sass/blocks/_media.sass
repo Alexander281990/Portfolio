@@ -1,0 +1,93 @@
+//--------------------------------------
+@media (max-width: 1439px)
+    .container
+        max-width: 960px
+    .sidepanel
+        display: none
+//---------------------------------------
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .sidepanel
+        display: none
+    .about
+        &_wrapper
+            grid-template-columns: 400px 520px
+            column-gap: 40px
+        &_skills
+            column-gap: 20px
+            grid-template: repeat(2, minmax(115px, auto))/repeat(2, 250px)
+            &-item
+                grid-template-columns: 40px 195px
+                column-gap: 15px
+//----------------------------------------
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .title
+        &_fz36
+            font-size: 30px
+    .about
+        &_wrapper
+            grid-template-columns: 300px 380px
+        &_skills
+            grid-template-columns: 380px
+            grid-auto-rows: minmax(115, auto)
+            &-item
+                grid-template-columns: 40px 320px
+                column-gap: 20px
+//----------------------------------------
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        &_fz48
+            font-size: 28px
+    .promo
+        &_title
+            width: 300px
+            line-height: 39px
+    .about
+        padding-top: 40px
+        &_wrapper
+            grid-template: 340px auto auto / 1fr
+        &_photo
+            grid-row: unset
+        &_skills
+            grid-template-columns: repeat(2, 260px)
+            &-item
+                grid-template-columns: 40px 200px
+                column-gap: 20px
+//----------------------------------------
+@media (max-width: 576px)
+    .container
+        width: 100%
+        padding: 0 10px
+    .title
+        &_fz48
+            font-size: 26px
+        &_fz36
+            font-size: 24px
+    .hamburger
+        right: 20px
+    .menu
+        &_block
+            width: 250px
+            padding-left: 20px
+            padding-top: 120px
+    .promo
+        background-image: url('../img/main_bg.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position-x: 57%
+        &_btns
+            margin-top: 30px
+    .about
+        &_wrapper
+            grid-template: 340px auto auto / 1fr
+        &_skills
+            grid-template-columns: 1fr
+            &-item
+                grid-template-columns: 40px 200px
+                column-gap: 20px
+//----------------------------------------   
