@@ -17,3 +17,5 @@ counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
+new WOW().init(); // Что бы анимация работала, когда пользователь прокручивает до элемента
+
