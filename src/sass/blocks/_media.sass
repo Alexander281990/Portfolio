@@ -81,6 +81,8 @@
             &-item
                 grid-template-columns: 40px 320px
                 column-gap: 20px
+    .promo
+        background-position-x: 70%
     .resume
         &_wrapper
             padding: 60px 5px 0 5px
@@ -124,7 +126,8 @@
         &_wrapper
             grid-template: 340px auto auto / 1fr
         &_photo
-            grid-row: unset
+            //grid-row: unset
+            display: none
         &_skills
             grid-template-columns: repeat(2, 260px)
             &-item
@@ -186,15 +189,17 @@
             padding-left: 20px
             padding-top: 120px
     .promo
-        background-image: url('../img/my_bg.jpg')
+        background-image: url('../img/bg_2.png')
         background-repeat: no-repeat
         background-size: cover
-        background-position-x: 57%
+        background-position-x: 70%
         &_btns
             margin-top: 30px
     .about
         &_wrapper
             grid-template: 340px auto auto / 1fr
+        &_photo
+            display: none
         &_skills
             grid-template-columns: 1fr
             &-item
